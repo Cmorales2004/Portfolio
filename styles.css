@@ -1,80 +1,13 @@
-body {
-    background-color: #ffffff;
-    color: #111111;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-/* NAVBAR */
-.navbar {
-    background-color: #f5f5f5;
-    border-bottom: 1px solid #ddd;
-    padding: 15px;
-}
-
-.navbar a {
-    margin-right: 15px;
-    text-decoration: none;
-    color: #111;
-}
-
-/* HERO */
-.hero {
-    text-align: center;
-    padding: 40px 20px;
-}
-
-/* SECTION TITLE */
-h1, h2, h3 {
-    color: #111;
-}
-
-/* LINKS */
-a {
-    color: #0a66c2;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* 🧠 CYBERSECURITY "CARDS" */
-.topic {
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 15px;
-    width: 260px;
-    text-align: left;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-    transition: transform 0.2s ease;
-}
-
-.topic:hover {
-    transform: translateY(-3px);
-}
-
-/* IMAGE FIX */
-.topic img {
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    border-radius: 8px;
-}
+    height: 100%;
 
-/* GRID LAYOUT */
-.topics-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-}
+    /* dark overlay for readability */
+    background: rgba(7, 11, 10, 0.85);
 
-/* FOOTER */
-.footer {
-    text-align: center;
-    padding: 20px;
-    border-top: 1px solid #ddd;
-    margin-top: 40px;
-    color: #666;
+    z-index: -1;
 }
